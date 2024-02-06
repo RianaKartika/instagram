@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+      <title>Instagram Clone Coding</title>
+
+      <link rel="stylesheet" href="css/default.css">
+      <link rel="stylesheet" href="css/sidebar.css">
+      <link rel="stylesheet" href="css/wrap.css">
+      <link rel="stylesheet" href="css/feed.css">
+      <link rel="stylesheet" href="css/account.css">
+      
+      <script>
+            let is_liked = true;
+            function like() {
+                  if (is_liked == true) {
+                        $('#heart').attr('src', 'image/icons/15.png')
+                        is_liked = false;
+                  } else {
+                        $('#heart').attr('src', 'image/icons/11.png')
+                        is_liked = true;
+                  }
+            }
+      </script>
+</head>
+
+<body>
+      <div class="main">
+            <div class="sidebar">
+                  <li>
+                        <img width="102" src="image/logo_instagram.png" alt="">
+                  </li>
+
+                  <li class="sidebar-content flex-row">
+                        <img src="image/icons/1.png" alt="">
+                        <p class="bold">Home</p>
+                  </li>
+                  <li class="sidebar-content flex-row">
+                        <img src="image/icons/2.png" alt="">
+                        <p class="bold">Search</p>
+                  </li>
+                  <li class="sidebar-content flex-row">
+                        <img src="image/icons/3.png" alt="">
+                        <p class="bold">Explore</p>
+                  </li>
+                  <li class="sidebar-content flex-row">
+                        <img src="image/icons/4.png" alt="">
+                        <p class="bold">Reels</p>
+                  </li>
+                  <li class="sidebar-content flex-row">
+                        <img src="image/icons/5.png" alt="">
+                        <p class="bold">Messages</p>
+                  </li>
+                  <li class="sidebar-content flex-row">
+                        <img src="image/icons/6.png" alt="">
+                        <p class="bold">Notifications</p>
+                  </li>
+                  <li class="sidebar-content flex-row">
+                        <img src="image/icons/7.png" alt="">
+                        <p class="bold">Create</p>
+                  </li>
+                  <li class="sidebar-content-pic flex-row">
+                        <img width="24" src="image/icons/pp.jpg" alt="">
+                        <p class="bold">Profile</p>
+                  </li>
+                  <li class="sidebar-content flex-row">
+                        <img width="24" src="image/icons/9.png" alt="">
+                        <p class="bold">More</p>
+                  </li>
+            </div>
+
+            <div class="wrapper">
+                  <div class="center flex-col">
+                        <div class="status-wrapper flex-row">
+                              <div class="status-card flex-col">
+                                    <div class="profile-pic">
+                                          <img width="32" src="image/follower/altheo.jpg" alt="">
+                                    </div>
+                                    <p class="username">Altheooo</p>
+                              </div>
+                              <div class="status-card flex-col">
+                                    <div class="profile-pic">
+                                          <img width="32" src="image/follower/marvin algara.jpg" alt="">
+                                    </div>
+                                    <p class="username">marvin.algara</p>
+                              </div>
+                              <div class="status-card flex-col">
+                                    <div class="profile-pic">
+                                          <img width="32" src="image/follower/cat.jpg" alt="">
+                                    </div>
+                                    <p class="username">penyukakucing</p>
+                              </div>
+                              <div class="status-card flex-col">
+                                    <div class="profile-pic">
+                                          <img width="32" src="image/follower/arin.jpg" alt="">
+                                    </div>
+                                    <p class="username">arinaja</p>
+                              </div>
+                              <div class="status-card flex-col">
+                                    <div class="profile-pic">
+                                          <img width="32" src="image/follower/bruno.jpeg" alt="">
+                                    </div>
+                                    <p class="username">BrunoMars</p>
+                              </div>
+                              <div class="status-card flex-col">
+                                    <div class="profile-pic">
+                                          <img width="32" src="image/follower/deler.jpeg" alt="">
+                                    </div>
+                                    <p class="username">showroom</p>
+                              </div>
+                              <div class="status-card flex-col">
+                                    <div class="profile-pic">
+                                          <img width="32" src="image/follower/Ari Irham.jpeg" alt="">
+                                    </div>
+                                    <p class="username">Ari Irham</p>
+                              </div>
+                              <div class="status-card flex-col">
+                                    <div class="profile-pic">
+                                          <img width="32" src="image/follower/suki.jpeg" alt="">
+                                    </div>
+                                    <p class="username">suki</p>
+                              </div>
+                        </div>
+                        <div class="feed flex-col">
+                              <div class="profile flex-row">
+                                    <div class="img-wrap">
+                                          <img width="32" height="32" src="image/profile/2.jpeg" alt="">
+                                    </div>
+                                    <p class="flex-col">
+                                          <span>wufyu03</span>
+                                          <span>lonely</span>
+                                    </p>
+                                    <img width="20" src="image/icons/10.png" alt="">
+                              </div>
+
+                              <div class="imgs swiper">
+                                    <div class="swiper-wrapper">
+                                          <div class="swiper-slide"><img src="image/post/4.jpg" alt=""></div>
+                                          <div class="swiper-slide"><img src="image/post/5.jpg" alt=""></div>
+                                    </div>
+                                    <div class="swiper-pagination"></div>
+                                    <div class="swiper-button-prev"></div>
+                                    <div class="swiper-button-next"></div>
+                                    <div class="swiper-scrollbar"></div>
+                              </div>
+
+                              <div class="feed-icons flex-row">
+                                    <img id="heart" onclick="like()" src="image/icons/11.png" alt="">
+                                    <img src="image/icons/12.png" alt="">
+                                    <img src="image/icons/13.png" alt="">
+                                    <img src="image/icons/14.png" alt="">
+                              </div>
+                              <div class="likes">
+                                    2,387 likes
+                              </div>
+                              <div class="captions">
+                                    <span class="title">
+                                          wufyu03
+                                    </span>
+                                    Let's Dinner
+                                    <span class="hastag">#dinner</span>
+                              </div>
+                              <div class="count">
+                                    View all 48 comments
+                              </div>
+                              <div class="comment flex-row">
+                                    <div class="comment-box">
+                                          <input type="text" name="" id="" placeholder="Add a Comment...">
+                                    </div>
+                                    <div class="imgs emoji-icons">
+                                          <img src="image/icons/17.png" alt="">
+                                    </div>
+                              </div>
+
+                        </div>
+                  </div>
+
+                  <div class="account">
+                        <div class="account-content">
+                              <li class="flex-row">
+                                    <div class="img-wrap">
+                                          <img width="56" src="image/profile/pp.jpg" alt="">
+                                    </div>
+                                    <p class="flex-col">
+                                          <span>krtka_rnaa</span>
+                                          <span>rianaja</span>
+                                    </p>
+                                    <a href="#">Switch</a>
+                              </li>
+                              <li class="flex-row sugessted">
+                                    <span>Suggested For You</span>
+                                    <a href="#">See All</a>
+                              </li>
+                              <li class="friends flex-row">
+                                    <div class="img-wrap">
+                                          <img width="56" height="56" src="image/follower/9.jpg" alt="">
+                                    </div>
+                                    <p class="flex-col">
+                                          <span>couman</span>
+                                          <span>Suggested For You</span>
+                                    </p>
+                                    <a href="#">Follow</a>
+                              </li>
+                              <li class="friends flex-row">
+                                    <div class="img-wrap">
+                                          <img width="56" height="56" src="image/follower/10.jpg" alt="">
+                                    </div>
+                                    <p class="flex-col">
+                                          <span>richman</span>
+                                          <span>Suggested For You</span>
+                                    </p>
+                                    <a href="#">Follow</a>
+                              </li>
+                              <li class="friends flex-row">
+                                    <div class="img-wrap">
+                                          <img width="56" height="56" src="image/follower/11.jpg" alt="">
+                                    </div>
+                                    <p class="flex-col">
+                                          <span>big_guy</span>
+                                          <span>Suggested For You</span>
+                                    </p>
+                                    <a href="#">Follow</a>
+                              </li>
+                              <li class="friends flex-row">
+                                    <div class="img-wrap">
+                                          <img width="56" height="56" src="image/follower/12.jpg" alt="">
+                                    </div>
+                                    <p class="flex-col">
+                                          <span>Harris_vrizz</span>
+                                          <span>Suggested For You</span>
+                                    </p>
+                                    <a href="#">Follow</a>
+                              </li>
+                              <li class="friends flex-row">
+                                    <div class="img-wrap">
+                                          <img width="56" height="56" src="image/follower/13.jpg" alt="">
+                                    </div>
+                                    <p class="flex-col">
+                                          <span>Marikoo</span>
+                                          <span>Suggested For You</span>
+                                    </p>
+                                    <a href="#">Follow</a>
+                              </li>
+                        </div>
+                        <div class="about">
+                              <a href="#">About</a>
+                              <a href="#">Help</a>
+                              <a href="#">Press</a>
+                              <a href="#">API</a>
+                              <a href="#">Jobs</a>
+                              <a href="#">Privacy</a>
+                              <a href="#">Terms</a>
+                              <a href="#">Location</a>
+                              <a href="#">Languages</a>
+                              <a href="#">Meta Verified</a>
+                        </div>
+                        <div class="name">
+                              © 2024 INSTAGRAM FROM META
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <script>
+            const swiper = new Swiper('.swiper', {
+                  // Optional parameters
+                  direction: 'horizontal',
+                  loop: true,
+
+                  // If we need pagination
+                  pagination: {
+                        el: '.swiper-pagination',
+                  },
+
+                  // Navigation arrows
+                  navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                  },
+
+                  // And if we need scrollbar
+                  scrollbar: {
+                        el: '.swiper-scrollbar',
+                  },
+            });
+      </script>
+
+</body>
+
+</html>
